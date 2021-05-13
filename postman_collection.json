@@ -1,0 +1,197 @@
+{
+	"info": {
+		"_postman_id": "64fe7edd-c5ea-42cd-9703-fca8eae7fbc8",
+		"name": "sds3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "All Sellers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/sellers",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"sellers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sales pagination 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/sales?page=1",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"sales"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sales pagination 2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/sales?page=1",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"sales"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sales pagination 2 size",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/sales?page=1&size=10",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"sales"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "size",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sales pagination 2 size sort",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/sales?page=1&size=10&sort=date",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"sales"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "size",
+							"value": "10"
+						},
+						{
+							"key": "sort",
+							"value": "date"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sales pagination 2 size sort desc",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/sales?page=0&size=10&sort=date,desc",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"sales"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "size",
+							"value": "10"
+						},
+						{
+							"key": "sort",
+							"value": "date,desc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sum By Seller",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/sales/successbyseller",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"sales",
+						"successbyseller"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Success By Seller",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/sales/sumbyseller",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"sales",
+						"sumbyseller"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
